@@ -1,0 +1,7 @@
+//Метод для чтения даных пользователя по запросу.
+//Method for reading user data on request.
+int ReadData(string msg)
+{
+      Console.WriteLine(msg);
+      return int.Parse(Console.ReadLine() ?? "0");
+}
