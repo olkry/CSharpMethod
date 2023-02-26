@@ -1,0 +1,40 @@
+// Метод с текстом, например, авторство в конце.
+//Method with text, for example, authorship at the end.
+void Method1()
+{
+      Console.WriteLine("Автор ...");
+}
+
+
+//Вывод сообщения несколько раз
+//Displaying a message multiple times
+void Method21(string msg, int count)
+{
+      int i = 0;
+      while (i < count)
+      {
+            Console.WriteLine(msg);
+            i++;
+      }
+}
+
+// Как пример, будет возвращать год.
+//As an example, it will return the year.
+int Method3()
+{
+      return DateTime.Now.Year;
+}
+
+//Метод для выведения на экран массива
+// Method for displaying an array
+void PrintArray(int[] array)
+{
+      int count = array.Length;
+
+      for (int i = 0; i < count; i++)
+      {
+            Console.Write($"{array[i]} ");
+      }
+      Console.WriteLine();
+}
+
