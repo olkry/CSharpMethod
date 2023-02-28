@@ -91,9 +91,18 @@ string LineBuilder(int num, int pow)
 }
 
 
-// Метод взведения в степень по формуле Гауса
-// Gauss exponentiation method
-long SumGausse(int numA)
+//Метод проверки, является ли одно число квадратом другого.
+//A method for checking if one number is the square of another.
+void SqeaTest(int num1, int num2)
 {
-    return ((1 + (long)numA) * (long)numA) / 2;
+      if (num1 == num2 * num2)
+      {
+            Console.WriteLine($"Число {num1} квадрат числа {num2}");
+
+      }
+      else
+      {
+            Console.WriteLine($"Число {num1} не квадрат числа {num2}");
+      }
 }
+

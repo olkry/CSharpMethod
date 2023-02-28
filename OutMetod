@@ -6,6 +6,13 @@ void Method1()
 }
 
 
+//Метод выводящий резултат
+// method print result to console
+void PrintData(int num, string msg)
+{
+      Console.WriteLine(num + msg);
+}
+
 //Вывод сообщения несколько раз
 //Displaying a message multiple times
 void Method21(string msg, int count)
@@ -38,3 +45,15 @@ void PrintArray(int[] array)
       Console.WriteLine();
 }
 
+
+//Метод выведения таблицы разрядов
+//Degree table derivation method
+string LineBuilder(int num, int pow)
+{
+      string res = String.Empty;
+      for (int i = 1; i <= num; i++)
+      {
+            res = res + Math.Pow(i, pow) + "\t";
+      }
+      return res;
+}
